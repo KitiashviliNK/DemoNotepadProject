@@ -4,11 +4,11 @@
       class="form-container">
 
     <div class="form-group">
-      <input type="text" name="noteTitleInput" [ngModel]="note.Title"
+      <input type="text" name="titleInput" ngModel
       class="form-control" placeholder="Title" autocomplete="off">
     </div>
     <div class="form-group">
-      <textarea  rows="5" required [ngModel]="note.Content" class="form-control" name="noteTextInput"
+      <textarea  rows="5" required ngModel class="form-control" name="contentInput"
          placeholder="Content"  autocomplete="off"></textarea>
     </div>
     <button  type="submit" class="btn" [disabled]="!noteForm.valid">Add</button>

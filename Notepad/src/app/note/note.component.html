@@ -1,7 +1,7 @@
 <div class="card" >
   <div class="card-body">
     <div class="card-flex">
-      <h5 class="card-title">{{note.NoteTitle}}</h5>
+      <h5 class="card-title">{{note.Title}}</h5>
       <div class="note-options ">
         <button type="button" class="btn dropleft" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span >&#xf0c9;</span>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <hr style="background-color: #20D38F;">
-    <pre><p class="card-text">{{note.NoteText}}</p></pre>
+    <pre><p class="card-text">{{note.Content}}</p></pre>
     <div class="card-flex">
       <span class="card-text"><small class="text-muted">{{note.CreateDateTime | date:'EEEE h:mm:ss a'}}</small></span>
     </div>

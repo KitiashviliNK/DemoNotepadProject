@@ -1,6 +1,7 @@
-import { JsonPipe } from '@angular/common';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { InoteService } from '../../services/abstractions/inote.service';
+import { NoteService } from '../../services/implementations/note.service';
+import { AngularFireAuth } from '@angular/fire/auth'
+import { INote } from 'src/models/abstractions/inote.model';
 
 @Component({
   selector: 'app-note',
@@ -9,13 +10,15 @@ import { InoteService } from '../../services/abstractions/inote.service';
 })
 export class NoteComponent implements OnInit {
 
-  constructor(private noteService:InoteService) {  }
+  note:INote;
+
+  constructor() {  }
 
   ngOnInit(): void {
   }
 
   onDeleteNote(note){
-    this.noteService.addNote(note);
+    // this.noteService.deleteNote(note);
   }
     
 }

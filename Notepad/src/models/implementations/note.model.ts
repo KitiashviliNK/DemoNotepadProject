@@ -7,11 +7,11 @@ export class Note implements INote
     Content:string;
     CreateDateTime:Date
 
-    constructor(){}
-    // constructor(noteTitle:string, noteText:string)
-    // {
-    //     this.NoteTitle = noteTitle;
-    //     this.NoteText = noteText;
-    //     this.CreateDateTime = new Date();
-    // }
+    // constructor(){}
+    constructor(noteTitle:string, noteText:string)
+    {
+        this.Title = noteTitle;
+        this.Content = noteText;
+        this.CreateDateTime = new Date();
+    }
 }

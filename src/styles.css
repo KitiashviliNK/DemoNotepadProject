@@ -1,8 +1,10 @@
-@import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css");
+/* @import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: "BPG Mrgvlovani", sans-serif;
+    /* font-family: "BPG Mrgvlovani", sans-serif; */
+    font-family: 'Roboto', sans-serif;
   }
 body{
     background-color: #20242A;
